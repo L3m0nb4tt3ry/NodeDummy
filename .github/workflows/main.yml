@@ -20,6 +20,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v1
+    - name: Checkout the repository
+      uses: actions/checkout@v1
     - name: My DevSecOps pipeline
-    - uses: L3m0nb4tt3ry/devsecops-action@master
+      uses: L3m0nb4tt3ry/devsecops-action@master
